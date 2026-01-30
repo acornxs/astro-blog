@@ -24,7 +24,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index" class="app-layout">
     <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        李戴的Blog's
       </h1>
       <a
         target="_blank"
@@ -42,19 +42,16 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        这是我刚刚用模版建立的博客，还很简陋，这个模板还没修改好，后续会慢慢更新自己的博客，欢迎关注阅读。此博客主要用于日常记录学习笔记和一些想法。
       </p>
       <p class="mt-2">
-        Read the blog posts or check
+        继续阅读博文或者点击
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="/about"
         >
-          README
-        </LinkButton> for more info.
+          关于
+        </LinkButton> 了解更多。
       </p>
       {
         // only display if at least one social link is enabled
@@ -76,7 +73,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             { "border-b border-border": recentPosts.length > 0 },
           ]}
         >
-          <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">精选</h2>
           <ul>
             {featuredPosts.map(data => (
               <Card variant="h3" {...data} />
@@ -89,7 +86,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">最新博文</h2>
           <ul>
             {recentPosts.map(
               (data, index) =>
@@ -102,7 +99,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     <div class="my-8 text-center">
       <LinkButton href="/posts/">
-        All Posts
+        所有博文
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
     </div>

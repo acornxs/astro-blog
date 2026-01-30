@@ -1,7 +1,7 @@
 ---
 author: 李戴
-pubDatetime: 2026-01-30 20:35:16
-modDatetime: 2026-01-30 20:35:41
+pubDatetime: 2026-01-30T20:35:16Z
+modDatetime: 2026-01-30T20:35:41Z
 title: First blog
 slug: 这是我写的第一篇博客
 featured: false

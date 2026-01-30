@@ -2,7 +2,7 @@
 author: 李戴
 pubDatetime: 2026-01-30T20:35:19.6781818+08:00
 modDatetime: 2026-01-30T22:46:56.4903657+08:00
-title: First blog
+title: First Blog
 featured: false
 draft: false
 tags:
